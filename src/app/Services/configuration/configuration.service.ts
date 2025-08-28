@@ -8,8 +8,9 @@ import { Configuration } from '../../Models/configuration';
 })
 export class ConfigurationService {
 
-  //private baseUrl : string = 'http://192.168.37.129/api/configuration';
-  private baseUrl : string = 'http://backend-service:8100/api/configuration';
+  private baseUrl : string = 'http://192.168.37.129/api/configuration';
+  //private baseUrl : string = 'http://backend-service:8100/api/configuration';
+  //private baseUrl : string = 'http://localhost:8100/api/configuration';
   
     constructor(private http: HttpClient) { }
     findAllConfigurations(): Observable<Configuration[]>{
